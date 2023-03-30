@@ -3,6 +3,7 @@
 import { useTheme } from "@/hooks/useTheme"
 // import { ElNotification } from "element-plus"
 import zhCn from "element-plus/lib/locale/lang/zh-cn"
+import { useLanguage } from '@/hooks/useLanguage'
 
 const { initTheme } = useTheme()
 

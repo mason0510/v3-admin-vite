@@ -72,21 +72,21 @@ export const constantRoutes: RouteRecordRaw[] = [
       }
     ]
   },
-  {
-    path: "/chat",
-    component: Layout,
-    children: [
-      {
-        path: "chaGptChat",
-        component: () => import("@/views/chat/chat.vue"),
-        name: "Chat",
-        meta: {
-          title: "聊天",
-          svgIcon: "link"
-        }
-      }
-    ]
-  },
+  // {
+  //   path: "/chat",
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: "chaGptChat",
+  //       component: () => import("@/views/chat/chat.vue"),
+  //       name: "Chat",
+  //       meta: {
+  //         title: "聊天",
+  //         svgIcon: "link"
+  //       }
+  //     }
+  //   ]
+  // },
   {
     path: "/table",
     component: Layout,

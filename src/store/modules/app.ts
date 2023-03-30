@@ -1,7 +1,7 @@
 import { reactive, ref } from "vue"
 import { defineStore } from "pinia"
 import { getSidebarStatus, setSidebarStatus } from "@/utils/cache/localStorage"
-
+import { store } from '@/store'
 export enum DeviceType {
   Mobile,
   Desktop
@@ -39,3 +39,7 @@ export const useAppStore = defineStore("app", () => {
 
   return { device, sidebar, toggleSidebar, closeSidebar, toggleDevice }
 })
+
+export function useAppStoreWithOut() {
+  return useAppStore(store)
+}

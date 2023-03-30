@@ -5,3 +5,9 @@ import { permission } from "./permission"
 export function loadDirectives(app: App) {
   app.directive("permission", permission)
 }
+
+import setupHighlightDirective from './highlight'
+
+export function setupDirectives(app: App) {
+  setupHighlightDirective(app)
+}

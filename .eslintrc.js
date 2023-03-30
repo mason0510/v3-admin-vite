@@ -1,9 +1,9 @@
 module.exports = {
-  root: true,
+  root: false,
   env: {
-    browser: true,
-    node: true,
-    es6: true
+    browser: false,
+    node: false,
+    es6: false
   },
   globals: {
     // script setup
